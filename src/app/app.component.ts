@@ -27,8 +27,6 @@ export class AppComponent implements OnInit {
     };
 
     this.dataService.getSampleText().subscribe((res: any) => {
-      console.log(res.data);
-
       this.data = res.data;
     });
   }

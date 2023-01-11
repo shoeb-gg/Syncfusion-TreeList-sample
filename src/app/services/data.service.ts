@@ -8,7 +8,8 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
   constructor(private http: HttpClient) {}
 
-  dataEndpoint = 'http://localhost:4000/api/data';
+  dataEndpoint =
+    'https://syncfusion-tree-list-sample-backend-lmkmu1nrf-shoeb-gg.vercel.app/api/data';
 
   getSampleText() {
     return this.http.get(this.dataEndpoint);
