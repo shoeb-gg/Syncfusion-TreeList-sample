@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TreeGridComponent } from './pages/tree-grid/tree-grid.component';
 
 const routes: Routes = [
   //Lazy loading standalone component
@@ -9,6 +8,13 @@ const routes: Routes = [
     loadComponent: () =>
       import('./pages/tree-grid/tree-grid.component').then(
         (m) => m.TreeGridComponent
+      ),
+  },
+  {
+    path: 'img',
+    loadComponent: () =>
+      import('./pages/opt-img/opt-img.component').then(
+        (m) => m.OptImgComponent
       ),
   },
 ];

@@ -1,0 +1,13 @@
+<section
+  class="flex flex-col justify-center items-center m-5 w-11/12 space-y-5"
+>
+  <ng-container *ngFor="let image of images">
+    <img
+      class="rounded-lg"
+      ngSrc="{{ image }}"
+      height="500"
+      width="600"
+      disableOptimizedSrcset
+    />
+  </ng-container>
+</section>
